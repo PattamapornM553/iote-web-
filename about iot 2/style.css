@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt', sans-serif;
+}
+
+body{
+    background:#dcdcdc;
+    padding:40px 20px;
+}
+
+/* กล่องประกาศกรอบส้ม */
+.top-announcement{
+    border:3px solid #f2a541;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    background:white;
+    max-width:900px;
+    margin:0 auto 40px auto;
+}
+
+
+.dual-section{
+    max-width:900px;
+    margin:0 auto;
+    position:relative;
+}
+
+/* กล่องtitleสีส้ม */
+.dual-title{
+    background:#f2a541;
+    color:white;
+    font-size:26px;
+    font-weight:700;
+    padding:25px 30px;
+    border-radius:15px;
+    width:65%;
+    z-index:2;
+}
+
+/* กล่องน้ำเงินบทความ */
+.dual-dark{
+    background:#1f2f3a;
+    color:white;
+    padding:50px 30px 30px 30px;
+    border-radius:10px;
+    margin-top:-20px;
+    line-height:1.6;
+}
+
+/*กล่องส้ม + 3 ไอคอน */
+.dual-highlight{
+    background:#f2a541;
+    border-radius:20px;
+    padding:50px 20px;
+    margin:50px 0;
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+    flex-wrap:wrap;
+}
+
+.item{
+    width:260px;
+}
+
+.icon-circle{
+    width:90px;
+    height:90px;
+    background:#1f2f3a;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+    margin:0 auto 20px;
+}
+
+/* why dual degree */
+.why-wrapper{
+    position:relative;
+    margin-top:80px;  
+}
+
+/* กล่องส้ม (อยู่หลัง) */
+.why-title{
+    position:absolute;
+    top:-55px;         
+    right:0px;         
+    background:#f2a541;
+    color:white;
+    padding:18px 45px;
+    font-size:22px;
+    font-weight:700;
+    border-radius:10px;
+    z-index:1;          
+}
+
+/* กล่องน้ำเงิน (อยู่หน้า) */
+.why-dark{
+    position:relative;
+    background:#1f2f3a;
+    color:white;
+    padding:60px 30px 30px 30px;
+    border-radius:10px;
+    z-index:2;         
+}
+
+/* IMAGE SECTION */
+.image-section{
+    max-width:900px;
+    margin:60px auto;
+    display:flex;
+    gap:20px;
+}
+
+.image-section img{
+    flex:1;              
+    max-width:50%;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.icon-circle{
+    width:90px;
+    height:90px;
+    background:#1f2f3a;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+}
+
+.icon-circle img{
+    width:48px;       
+    height:48px;
+    object-fit:contain;
+}
+
+@media (max-width:768px){
+
+    body{
+        padding:20px 15px;
+    }
+
+    .dual-title{
+        width:100%;
+        font-size:20px;
+    }
+
+    .dual-dark{
+        padding:40px 20px 25px 20px;
+    }
+
+    .dual-highlight{
+        flex-direction:column;
+        align-items:center;
+        gap:40px;
+    }
+
+    .item{
+        width:100%;
+        max-width:300px;
+    }
+
+    .why-title{
+        right:50%;
+        transform:translateX(50%);
+    }
+
+    .image-section{
+        flex-direction:column;
+    }
+
+    .image-section img{
+        width:100%;
+    }
+
+}
