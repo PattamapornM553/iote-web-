@@ -129,7 +129,7 @@ main {
     left: 0;
     background-color: transparent;
 }
-.hero{
+.aca{
     height: 400px;                 
     background-image: url("a.jpg"); 
     background-size: cover;        
@@ -144,7 +144,7 @@ main {
 }
 
 
-.hero::before{
+.aca::before{
     content: "";
     position: absolute;
     inset: 0;
@@ -152,7 +152,7 @@ main {
 }
 
 
-.hero h1{
+.aca h1{
     position: relative;
     color: #fff;
     font-size: 48px;
